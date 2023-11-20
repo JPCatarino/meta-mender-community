@@ -31,5 +31,5 @@ SRC_URI:append:tegra194:mender-persist-systemd-machine-id = " \
 do_install:prepend:tegra194:class-target:mender-persist-systemd-machine-id() {
     install -d -m 755 ${D}${bindir}
     install -m 755 ${WORKDIR}/efi_systemd_machine_id.sh ${D}${bindir}/
-    cp ${WORKDIR}/tegra234-mender-client-set-systemd-machine-id.sh ${WORKDIR}/mender-client-set-systemd-machine-id.sh 
+    cp ${WORKDIR}/tegra194-mender-client-set-systemd-machine-id.sh ${WORKDIR}/mender-client-set-systemd-machine-id.sh 
 }
